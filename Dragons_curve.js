@@ -1,6 +1,7 @@
 // from https://www.codewars.com/kata/dragons-curve/javascript
 
 const Dragon = (n, str='Fa')=>{
+  if (isNaN(n) || n<0) return ''
   if(n===0) {
     str=str.replace(/a/g, '')
     str=str.replace(/b/g, '')
