@@ -1,6 +1,6 @@
 // from https://www.codewars.com/kata/dragons-curve/javascript
 
-const fxn = (n, str='Fa')=>{
+const Dragon = (n, str='Fa')=>{
   if(n===0) {
     str=str.replace(/a/g, '')
     str=str.replace(/b/g, '')
@@ -10,7 +10,7 @@ const fxn = (n, str='Fa')=>{
   newStr=newStr.replace(/a/g, 'aRbFR')
   newStr=newStr.replace(/c/g, 'LFaLb')
   // }
-  return fxn(n-1, newStr)
+  return Dragon(n-1, newStr)
 }
 
 console.log(fxn(0))
